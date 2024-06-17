@@ -5,6 +5,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text>Premier Commit</Text>
+      <Text></Text>
       <StatusBar style="auto" />
     </View>
   );

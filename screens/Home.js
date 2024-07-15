@@ -11,9 +11,6 @@ export default function Home({navigation}) {
   return (
     <View style={styles.container}>
       <ImageBackground style={[styles.img, { height: imageHeight }]} source={require('../assets/img/fermier.jpg')}>
-        {/* <View style={[styles.textContainer, { width: textContainerWidth }]}>
-          <Text style={styles.text}>Vente de produits frais</Text>
-        </View> */}
       </ImageBackground>
       
       <View style={[styles.linkContainer, { marginTop: -40 }]}>

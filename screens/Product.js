@@ -11,17 +11,13 @@ export default function Product({route, navigation}) {
     <View style={{backgroundColor: backgroundColor, flex:1}}>
       <Pressable onPress={() => navigation.navigate("HomeShopping")} style={{position : 'absolute', top : 75, left : 25}}>
         <MaterialIcons name="keyboard-return" size={50} color="black" />
-        </Pressable>
-        <View style={styles.linkContainer}>
-            <View style={styles.image}>
+      </Pressable>
+      <View style={styles.linkContainer}>
+        <View style={styles.image}>
             <Image source={image} style={{width : 200, height:  200}}  resizeMode='contain' />
-            </View>
+            <Text style={{textAlign:'center', fontSize: 45, fontWeight:'700'}}>{name}</Text>
         </View>
-        {/* 
-          <Image source={image} style={{height : 150, width : 150, position :'absolute', left : 150, top : 100, flex : 2 }} />
-          <View style={[styles.linkContainer]}>
-
-          </View> */}
+      </View>
     </View>
   )
 }

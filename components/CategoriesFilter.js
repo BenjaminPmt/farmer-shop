@@ -8,10 +8,10 @@ export default function CategoriesFilter({ selectedCategory, setSelectedCategory
       {categories.map((category) => (
         <TouchableOpacity
           key={category.id}
-          style={[styles.categoryContainer, { backgroundColor: category.id === selectedCategory ? "#FFE384" : 'white' }]}
+          style={[styles.categoryContainer, { backgroundColor: category.id === selectedCategory ? "#FF0B37" : 'white' }]}
           onPress={() => setSelectedCategory(category.id)}
         >
-          <Text style={{ fontSize: 15, fontWeight: '700', color: category.id === selectedCategory ? "#FFF" : 'black' }}>{category.category}</Text>
+          <Text style={{ fontSize: 15, fontWeight: '700'}}>{category.category}</Text>
         </TouchableOpacity>
       ))}
     </ScrollView>

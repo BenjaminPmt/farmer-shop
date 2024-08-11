@@ -9,17 +9,11 @@ export default function Card({image, name, backgroundColor, navigation}) {
       <Pressable onPress={() => navigation.navigate("Product", {name, image, backgroundColor})}>
       <View style={styles.cardContainer}>
           <Image source={image} style={{height : 70, width : 70, }} />
-          <Text style={{paddingTop:  20, fontSize : 20, fontWeight : '700'}}>{name}</Text>
+          <Text style={{paddingTop:  20, fontSize : 18, fontWeight : '700'}}>{name}</Text>
           
       </View>
-      <View style={[styles.addContainer, { backgroundColor: backgroundColor }]}>
-          {/* <Pressable onPress={() => setNbrItem(nbrItem - 1)}>
-            <Text style={styles.addProduct}>-</Text>
-          </Pressable>
-          <Text style={styles.addProduct}>{nbrItem}</Text>
-          <Pressable onPress={() => setNbrItem(nbrItem + 1)}>
-            <Text style={styles.addProduct}>+</Text>
-          </Pressable> */}
+      <View style={[styles.addContainer, { backgroundColor: backgroundColor, justifyContent : 'center'}]}>
+         <Text style={{color:'#FFFF', fontWeight:'700'}}>En Stock</Text>
       </View>
       </Pressable>
     </View>

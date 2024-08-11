@@ -22,10 +22,10 @@ export default function HomeShopping({navigation}) {
 
   return (
     <SafeAreaView style={styles.container}>
-      <Header headerName={"Bonjour, Benjamin"} />
-      <ScrollView horizontal showsHorizontalScrollIndicator={false} style={{ marginTop: 35,height : 55 }}>
+      <Header headerName={"Bonjour, Benjamin"} navigation={navigation} />
+      <View style={{ marginTop: 30,height : 55, marginBottom : 15}}>
         <CategoriesFilter selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} />
-      </ScrollView>
+      </View>
       <ScrollView >
         <View style={styles.cardContainer}>
         {filteredItems().map((item) => (

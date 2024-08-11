@@ -1,19 +1,25 @@
 export const categories = [
     {
         id: '01',
-        category: 'Tous'
+        category: 'Tous',
+        image : require('./assets/img/legume.png')
+    
     },
     {
         id: '02',
-        category: 'Légumes'
+        category: 'Légumes',
+        image : require('./assets/img/vegetable.png')
     },
     {
         id: '03',
-        category: 'Fruits'
+        category: 'Fruits',
+        image : require('./assets/img/fruits.png')
     },
     {
         id: '04',
-        category: 'Autres'
+        category: 'Autres',
+        image : require('./assets/img/autres.png')
+        
     }
 ];
 

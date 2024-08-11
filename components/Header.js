@@ -1,7 +1,7 @@
-import { View, Text, StyleSheet, Dimensions, Image } from 'react-native';
+import { View, Text, StyleSheet, Dimensions, Image, Pressable } from 'react-native';
 import React from 'react';
 
-export default function Header({headerName}) {
+export default function Header({headerName, navigation}) {
   const { height } = Dimensions.get('window');
   const HEADER_HEIGHT = height * 0.06;
 
@@ -22,16 +22,15 @@ export default function Header({headerName}) {
     image:{
       width : 35,
       height : 35,
-      // position : 'absolute',
-      // right : 35,
-      // bottom : 10,
     }
   });
 
   return (
     <View style={styles.container}>
-      <Text>{headerName}</Text>
-      <Image style={styles.image} source={require('../assets/img/panier2.png')} />
+      <Text style={{fontWeight:'700', fontSize : 15}} >{headerName}</Text>
+      <Pressable onPress={() => navigation.navigate('Basket')}>
+        <Image style={styles.image} source={require('../assets/img/panier2.png')} />
+      </Pressable>
     </View>
   );
 }
